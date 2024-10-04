@@ -215,3 +215,9 @@ barra19.grid(column=18,row=0, padx = 1)
 barra20 = ttk.Progressbar(frame1, orient= 'vertical', length=300,  maximum=300, style="Vertical.TProgressbar") 
 barra20.grid(column=19,row=0, padx = 1)
 
+
+estilo1 = ttk.Style()
+estilo1.theme_use('clam')
+estilo1.configure("Horizontal.TProgressbar", foreground='red', background='black',troughcolor='DarkOrchid1',
+																bordercolor='#970BD9',lightcolor='#970BD9', darkcolor='black')
+

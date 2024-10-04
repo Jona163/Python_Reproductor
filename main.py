@@ -118,3 +118,25 @@ def adelantar():
 	cantidad['text'] = str(pos)+'/'+str(n)
 
 
+
+def detener_efecto():
+	barra1['value'] = 50
+	barra2['value'] = 60
+	barra3['value'] = 70
+	barra4['value'] = 80
+	barra5['value'] = 90
+	barra6['value'] = 100
+	barra7['value'] = 90
+	barra8['value'] = 80
+	barra9['value'] = 70
+	barra10['value'] = 60
+	barra11['value'] = 60
+	barra12['value'] = 70
+	barra13['value'] = 80
+	barra14['value'] = 90
+	barra15['value'] = 100
+	barra16['value'] = 90
+	barra17['value'] = 80
+	barra18['value'] = 70
+	barra19['value'] = 60
+	barra20['value'] = 50

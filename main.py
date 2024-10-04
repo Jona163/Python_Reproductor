@@ -54,3 +54,28 @@ def iniciar_reproduccion():
 	barra18['value'] = random.choice(lista)
 	barra19['value'] = random.choice(lista)
 	barra20['value'] = random.choice(lista)
+
+
+	cancion_actual = direcion[pos]
+	nombre_cancion = cancion_actual.split('/')
+	nombre_cancion = nombre_cancion[-1]
+	nombre['text']= nombre_cancion
+
+	time = pygame.mixer.music.get_pos()
+	x = int(int(time)*0.001)
+	tiempo['value']= x  #posicion de la cancion
+
+	y = float(int(volumen.get())*0.1)
+	pygame.mixer.music.set_volume(y)
+	nivel['text']= int(y*100)
+
+	audio = mutagen.File(cancion_actual)	
+	log = audio.info.length
+	minutos, segundos = divmod(log, 60)
+
+	minutos, segundos = int(minutos), int(segundos)
+	tt = minutos*60 + segundos
+	tiempo['maximum']= tt  # tiempo total de la cancion
+	texto['text']= str(minutos) + ":" + str(segundos)
+	
+	actualizar = ventana.after(100 , iniciar_reproduccion)

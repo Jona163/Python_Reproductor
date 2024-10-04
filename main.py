@@ -227,6 +227,15 @@ tiempo.grid(row=0, columnspan=8, padx=5)
 texto = Label(frame2, bg='black', fg='green2', width=5)
 texto.grid(row=0,column=8)
 
+
+imagen1  = PhotoImage(file ='carpeta.png')
+imagen2  = PhotoImage(file ='play.png')
+imagen3  = PhotoImage(file ='pausa.png')
+imagen4 = PhotoImage(file ='repetir.png')
+imagen5 = PhotoImage(file ='stop.png')
+imagen6 = PhotoImage(file ='anterior.png')
+imagen7 = PhotoImage(file ='adelante.png')
+
 nombre = Label(frame2, bg='black', fg='red', width=55)
 nombre.grid(column=0, row=1, columnspan=8, padx=5)
 cantidad = Label(frame2, bg='black', fg='green2')

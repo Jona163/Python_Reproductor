@@ -155,3 +155,20 @@ def pausa():
 def continuar():
 	pygame.mixer.music.unpause()
 	ventana.after(100 , iniciar_reproduccion)
+
+ventana =Tk()
+ventana.title('Reproductor de Musica')
+ventana.iconbitmap('icono.ico')
+ventana.config(bg='black')
+ventana.resizable(0,0)
+
+estilo = ttk.Style()
+estilo.theme_use('clam')
+estilo.configure("Vertical.TProgressbar", foreground='green2', background='green2',troughcolor='black',
+	bordercolor='black',lightcolor='green2', darkcolor='green2')
+
+frame1 = Frame(ventana, bg='black', width=600, height=350)
+frame1.grid(column=0,row=0, sticky='nsew')
+frame2 = Frame(ventana, bg='black', width=600, height=50)
+frame2.grid(column=0,row=1, sticky='nsew')
+

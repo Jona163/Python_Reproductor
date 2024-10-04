@@ -255,3 +255,15 @@ atras = Button(frame2, image= imagen6, bg='orange',command= retroceder)
 atras.grid(column=5, row=2, pady=10)
 adelante = Button(frame2, image= imagen7, bg='green',command=adelantar)
 adelante.grid(column=6, row=2, pady=10)
+
+volumen = ttk.Scale(frame2, to = 10, from_ =0, orient='horizontal',length=90, style= 'Horizontal.TScale')
+volumen.grid(column=7, row=2)
+
+style = ttk.Style()
+style.configure("Horizontal.TScale", bordercolor='green2', troughcolor='black', background= 'green2', 
+	foreground='green2',lightcolor='green2',darkcolor='black')  
+
+nivel = Label(frame2, bg='black', fg='green2', width=3)
+nivel.grid(column=8,row=2)
+
+ventana.mainloop()

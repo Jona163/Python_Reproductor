@@ -221,3 +221,8 @@ estilo1.theme_use('clam')
 estilo1.configure("Horizontal.TProgressbar", foreground='red', background='black',troughcolor='DarkOrchid1',
 																bordercolor='#970BD9',lightcolor='#970BD9', darkcolor='black')
 
+
+tiempo = ttk.Progressbar(frame2, orient= 'horizontal', length = 390, mode='determinate',style="Horizontal.TProgressbar")
+tiempo.grid(row=0, columnspan=8, padx=5)
+texto = Label(frame2, bg='black', fg='green2', width=5)
+texto.grid(row=0,column=8)

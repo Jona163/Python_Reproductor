@@ -26,3 +26,31 @@ def abrir_archivo():
 
 	nombre_cancion = cancion_actual.split('/')
 	nombre_cancion = nombre_cancion[-1]
+
+
+lista = []
+for i in range(50,200,10):
+	lista.append(i)
+
+def iniciar_reproduccion():
+	global cancion_actual, direcion, pos, n, actualizar
+	barra1['value'] = random.choice(lista)
+	barra2['value'] = random.choice(lista)
+	barra3['value'] = random.choice(lista)
+	barra4['value'] = random.choice(lista)
+	barra5['value'] = random.choice(lista)
+	barra6['value'] = random.choice(lista)
+	barra7['value'] = random.choice(lista)
+	barra8['value'] = random.choice(lista)
+	barra9['value'] = random.choice(lista)
+	barra10['value'] = random.choice(lista)
+	barra11['value'] = random.choice(lista)
+	barra12['value'] = random.choice(lista)
+	barra13['value'] = random.choice(lista)
+	barra14['value'] = random.choice(lista)
+	barra15['value'] = random.choice(lista)
+	barra16['value'] = random.choice(lista)
+	barra17['value'] = random.choice(lista)
+	barra18['value'] = random.choice(lista)
+	barra19['value'] = random.choice(lista)
+	barra20['value'] = random.choice(lista)

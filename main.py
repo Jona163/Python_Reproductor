@@ -79,3 +79,21 @@ def iniciar_reproduccion():
 	texto['text']= str(minutos) + ":" + str(segundos)
 	
 	actualizar = ventana.after(100 , iniciar_reproduccion)
+
+
+	if x == tt:
+		ventana.after_cancel(actualizar)
+		texto['text']= "00:00"
+		detener_efecto()
+		if pos != n:
+			pos = pos + 1
+			ventana.after(100 , iniciar_reproduccion)
+			pygame.mixer.music.play()
+		if pos == n:
+			pos = 0
+
+def iniciar():
+	global cancion_actual
+	pygame.mixer.music.load(cancion_actual)
+	pygame.mixer.music.play()
+	iniciar_reproduccion()

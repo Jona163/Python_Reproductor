@@ -140,3 +140,18 @@ def detener_efecto():
 	barra18['value'] = 70
 	barra19['value'] = 60
 	barra20['value'] = 50
+
+
+def stop():
+	global actualizar
+	pygame.mixer.music.stop()
+	ventana.after_cancel(actualizar)
+	detener_efecto()   
+def pausa():
+	global actualizar
+	pygame.mixer.music.pause()
+	ventana.after_cancel(actualizar)
+	detener_efecto()
+def continuar():
+	pygame.mixer.music.unpause()
+	ventana.after(100 , iniciar_reproduccion)

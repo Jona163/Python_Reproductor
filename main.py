@@ -172,3 +172,19 @@ frame1.grid(column=0,row=0, sticky='nsew')
 frame2 = Frame(ventana, bg='black', width=600, height=50)
 frame2.grid(column=0,row=1, sticky='nsew')
 
+
+barra1 = ttk.Progressbar(frame1, orient= 'vertical', length=300,  maximum=300, style="Vertical.TProgressbar") #,takefocus=True mode='determinate',
+barra1.grid(column=0,row=0, padx = 1)
+barra2 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")
+barra2.grid(column=1,row=0, padx = 1)
+barra3 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")
+barra3.grid(column=2,row=0, padx = 1)
+barra4 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")
+barra4.grid(column=3,row=0, padx = 1)
+barra5 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")
+barra5.grid(column=4,row=0, padx = 1)
+barra6 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")
+barra6.grid(column=5,row=0, padx = 1)
+barra7 = ttk.Progressbar(frame1, orient= 'vertical', length=300,  maximum=300, style="Vertical.TProgressbar") #,takefocus=True
+barra7.grid(column=6,row=0, padx = 1)
+barra8 = ttk.Progressbar(frame1, orient= 'vertical',length=300,  maximum=300, style="Vertical.TProgressbar")

@@ -97,3 +97,24 @@ def iniciar():
 	pygame.mixer.music.load(cancion_actual)
 	pygame.mixer.music.play()
 	iniciar_reproduccion()
+
+
+def retroceder():
+	global pos,n
+
+	if pos >0:
+		pos = pos-1
+	else:
+		pos = 0
+	cantidad['text'] = str(pos)+'/'+str(n)
+
+def adelantar():
+	global pos, n
+
+	if pos == n-1:
+		pos = 0
+	else:
+		pos = pos + 1
+	cantidad['text'] = str(pos)+'/'+str(n)
+
+

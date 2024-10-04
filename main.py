@@ -226,3 +226,8 @@ tiempo = ttk.Progressbar(frame2, orient= 'horizontal', length = 390, mode='deter
 tiempo.grid(row=0, columnspan=8, padx=5)
 texto = Label(frame2, bg='black', fg='green2', width=5)
 texto.grid(row=0,column=8)
+
+nombre = Label(frame2, bg='black', fg='red', width=55)
+nombre.grid(column=0, row=1, columnspan=8, padx=5)
+cantidad = Label(frame2, bg='black', fg='green2')
+cantidad.grid(column=8, row=1)
